@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <style>
-        h1, h2{text-align: center;}
+        h1, h2, main{text-align: center;}
         img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        }  
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
     </style>
     <head>
         <meta charset="UTF-8">
@@ -28,5 +28,63 @@
         <h1>YOOO whats POPPEN Gamers</h1>
         <h2>Its yu Girl (is super cool)</h2>
         <img src="garfield.png" alt="Garf" class="center">
+
+        <a href="main-content" class="skip-link">skip to main content</a>
+
+        <header role="banner">
+            <div class="container">
+                <h1>Lia Roeback</h1>
+                <p class="tagline">CSC210 Student</p>
+            </div>
+        </header>
+
+        <nav role="navigation" aria-label="Main navigation">
+            <div class="container">
+                <ul>
+                    <li><a href="#about" aria-describedby="about-desc">About Me</a></li>
+                    <li><a href="#skills" aria-describedby="skills-desc">My Skills</a></li>
+                    <li><a href="#projects" aria-describedby="projects-desc">Amazing Projects</a></li>
+                    <li><a href="#contact" aria-describedby="contact-desc">Contact Me!</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main id="main-content" role="main">
+            <div class="container">
+                <section id="about" aria-labelledby="about-heading">
+                    <h2 id="about-heading">About Me</h2>
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p>The CSC210 class will cover an intro to <strong>HTML5</strong> and <strong>CSS3</strong></p>
+                            <details>
+                                <summary>Class Journey</summary>
+                                <p>We went Sicko Mode on HTML on the 3rd (almost the fourth LOL)</p>
+                            </details>
+                        </div>
+                    </div>
+                    <aside class="intrests" aria-labelledby="intrests-heading">
+                        <h3 id="intrests-heading"Class Intrests>
+                            <ul>
+                                <li>
+                                    <span role="img" aria-label="Gaming">🎮</span>
+                                    Gaming(Metal Gear, League of Legends, Monster Hunter,...)
+                                </li>
+                                <li>
+                                    <span role="img" aria-label="Programing">💻</span>
+                                    Programing - Java is my Fav lang but i can code in Java, C++, C#, Python and Java Script
+                                </li>
+                                <li>
+                                    <span role="img" aria-label="Music">🎵 </span>
+                                    IDK i just kinda listen to random a a stuff, low roars my fav rn tho
+                                </li>
+                                <li>
+                                    <span role="img" aria-label="Learning">📔</span>
+                                    I like to learn Comp Sci and German
+                                </li>
+                            </ul>
+                        </h3>
+                    </aside>
+                </section>
+            </div>
+        </main>
     </body>
 </html>
