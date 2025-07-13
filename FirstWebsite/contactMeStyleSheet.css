@@ -1,0 +1,109 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    body{
+        font-family: 'Sagoe UI', sans-serif;
+        background: #b1a4ac;
+        color: #333;
+        line-height: 1.6;
+        padding: 2rem
+    }
+    header{
+        text-align: center;
+        background-color: #c3d8ff;
+        color: white;
+        padding: 2rem;
+        border-radius: 10px;
+        margin-bottom: 4rem;
+        margin-top: 3rem;
+    }
+    header h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .tagline{
+        font-style: italic;
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin: 1rem o 2rem 0;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        margin-bottom: 4rem;
+    }
+    nav a{
+        text-decoration: none;
+        color: #0066cc;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+    nav a:hover{
+        color: #004a99;
+        text-decoration: underline;
+    }
+    main{
+        max-width: 900px;
+        margin: auto;
+    }
+    .container{
+        max-width: 900px;
+        margin: auto;
+        padding: 1rem;
+    }
+    #contactMe{
+        background-color: white;
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+        border-left: 5px solid #0066cc;
+        border-radius: 5px;
+    }
+    .contact-text p{
+        margin-bottom: 1rem;
+    }
+    aside.contacts{
+        background-color: #eaf3fc;
+        padding: 1rem;
+        margin-top: 1rem;
+        border-left: 4px solid #004a99;
+        border-radius: 4px;
+    }
+    aside.contacts ul{
+        list-style: none;
+        padding-left: 0;
+    }
+    aside.contacts li{
+        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 1rem;
+    }
+    details{
+        margin-top: 1rem;
+        padding: 0.5rem;
+        background-color: #f0f8ff;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    details summary{
+        cursor: pointer;
+        font-weight: bold;
+    }
+    h2,h3{
+        color: #004a99;
+        margin-bottom: 1rem;
+    }
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
