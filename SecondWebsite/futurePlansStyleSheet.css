@@ -1,100 +1,103 @@
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    html{
-        scroll-behavior: smooth;
-    }
-    body{
-        font-family: 'Sagoe UI', sans-serif;
-        background: #2b2a2a;
-        color: #333;
-        line-height: 1.6;
-        padding: 2rem
-    }
-    header{
-        text-align: center;
-        background-color: #0066cc;
-        color: white;
-        padding: 2rem;
-        border-radius: 10px;
-        margin-bottom: 2rem;;
-    }
-    header h1{
-        font-size: 2rem;
-        text-align: center;
-    }
-    .tagline{
-        font-style: italic;
-        font-size: 1.2rem;
-        margin-top: 0.5rem;
-    }
-    nav ul{
-        display: flex;
-        justify-content: center;
-        list-style: none;
-        margin: 1rem o 2rem 0;
-        gap: 1.5rem;
-        flex-wrap: wrap;
-    }
-    nav a{
-        text-decoration: none;
-        color: #0066cc;
-        font-weight: bold;
-        transition: color 0.3s ease;
-    }
-    nav a:hover{
-        color: #a1a6ac;
-        text-decoration: underline;
-    }
-    main{
-        max-width: 900px;
-        margin: auto;
-    }
-    .container{
-        max-width: 900px;
-        margin: auto;
-        padding: 1rem;
-    }
-    #plans{
-        background-color: rgb(70, 68, 68);
-        padding: 1.5rem;
-        margin-bottom: 2rem;
-        border-left: 5px solid #0066cc;
-        border-radius: 5px;
-    }
-    .plans-text p{
-        margin-bottom: 1rem;
-    }
-    aside.interests{
-        background-color: #eaf3fc;
-        padding: 1rem;
-        margin-top: 1rem;
-        border-left: 4px solid #004a99;
-        border-radius: 4px;
-    }
-    details{
-        margin-top: 1rem;
-        padding: 0.5rem;
-        background-color: #f0f8ff;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-    }
-    details summary{
-        cursor: pointer;
-        font-weight: bold;
-    }
-    h2,h3{
-        color: #a8b1bb;
-        margin-bottom: 1rem;
-    }
-    img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    footer{
-        color: #eaf3fc;
-        font-size: small;
-    }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Sagoe UI', sans-serif;
+    background: #2b2a2a;
+    color: #333;
+    line-height: 1.6;
+    padding: 2rem
+}
+header{
+    text-align: center;
+    background-color: #0066cc;
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;;
+}
+header h1{
+    font-size: 2rem;
+    text-align: center;
+}
+.tagline{
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 1rem o 2rem 0;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+nav a{
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+nav a:hover{
+    color: #a1a6ac;
+    text-decoration: underline;
+}
+main{
+    max-width: 900px;
+    margin: auto;
+}
+.container{
+    max-width: 900px;
+    margin: auto;
+    padding: 1rem;
+}
+#plans{
+    background-color: rgb(70, 68, 68);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-left: 5px solid #0066cc;
+    border-radius: 5px;
+}
+.plans-text p{
+    margin-bottom: 1rem;
+}
+aside.interests{
+    background-color: #eaf3fc;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-left: 4px solid #004a99;
+    border-radius: 4px;
+}
+details{
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: #f0f8ff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+details summary{
+    cursor: pointer;
+    font-weight: bold;
+}
+h2,h3{
+    color: #a8b1bb;
+    margin-bottom: 1rem;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer{
+    color: #eaf3fc;
+    font-size: small;
+}
+table, th, td {
+    border: 1px solid;
+}
