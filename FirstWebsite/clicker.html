@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Clicker + RPS Game</title>
+        <link rel="stylesheet" href="clickerStyleSheet.css"/>
+    </head>
+    <body>
+        <div class="game-wrapper">
+            <!--clicker game-->
+            <div class="container">
+                <h1>Clicker Game</h1>
+                <p>Score: <span id="Score">0</span></p>
+                <button id="click-button">Click Me!!!</button>
+            </div>
+            <div class="container">
+                <h1>Rock Paper Scissors</h1>
+                <div class="rps-button">
+                    <button class="rps" data-choice="rock">🪨 Rock</button>
+                    <button class="rps" data-choice="paper">📰 Paper</button>
+                    <button class="rps" data-choice="scissors">✂️ Scissors</button>
+                </div>
+                <p>You chose: <span id="player-choice">-</span></p>
+                <p>Computer chose: <span id="computer-choice">-</span></p>
+                <p>Result: <span id="rps-result">-</span> </p>
+            </div>
+        </div>
+        <script src="clicker.js"></script>
+    </body>
+</html>
