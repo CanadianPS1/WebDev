@@ -86,7 +86,7 @@
         font-weight: bold;
     }
     h2,h3{
-        color: #a8b1bb;
+        color: #e2e2e2;
         margin-bottom: 1rem;
     }
     img{
@@ -97,4 +97,17 @@
     footer{
         color: #eaf3fc;
         font-size: small;
+    }
+    th, td {
+        color: #ffffff; /* Change this to any color you like */
+        padding: 0.5rem;
+        text-align: center;
+    }
+
+    th {
+        background-color: #333; /* Optional: make headers stand out */
+    }
+
+    td {
+        background-color: #444; /* Optional: make table rows more readable */
     }
