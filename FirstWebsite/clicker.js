@@ -19,7 +19,7 @@ document.querySelectorAll(".rps").forEach(button => {
     });
 });
 function getResult(player,computer){
-    if(player == computer) return "Its a TIE!!";
+    if(player === computer) return "Its a TIE!!";
     else if(player === "rock" && computer === "scissors" ||
             player === "scissors" && computer === "paper" ||
             player === "paper" && computer === "rock") 

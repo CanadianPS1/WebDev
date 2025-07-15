@@ -31,7 +31,7 @@ button{
     background-color: #4caf50;
     color: white;
     cursor: pointer;
-    transition: 0.2;
+    transition: 0.2s;
 }
 button:hover{
     background-color: #45a049;
@@ -40,7 +40,7 @@ button:hover{
     font-weight: bold;
     font-size: 1.5rem;
 }
-.rps-buttons{
+.rps-button{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
