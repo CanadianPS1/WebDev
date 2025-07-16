@@ -111,3 +111,17 @@
     td {
         background-color: #444; /* Optional: make table rows more readable */
     }
+    button{
+        margin-left: 90%;
+        padding: 0.5rem;
+        color: red;
+        background-color: greenyellow;
+        box-shadow: 0.5rem;
+        border-style:dotted;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: large;
+        transition: 0.2s;
+    }
+    button:hover{
+        background-color: purple;
+    }

@@ -8,15 +8,15 @@
     }
     body{
         font-family: 'Sagoe UI', sans-serif;
-        background: #f4f6f8;
-        color: #333;
+        background: var(--bg-primary);
+        color: var(--text-primary);
         line-height: 1.6;
         padding: 2rem
     }
     header{
         text-align: center;
-        background-color: #0066cc;
-        color: white;
+        background-color: var(--color-primary);
+        color: var(--text-primary);
         padding: 2rem;
         border-radius: 10px;
         margin-bottom: 2rem;;
@@ -40,7 +40,7 @@
     }
     nav a{
         text-decoration: none;
-        color: #0066cc;
+        color: var(--text-primary);
         font-weight: bold;
         transition: color 0.3s ease;
     }
@@ -58,20 +58,20 @@
         padding: 1rem;
     }
     #about{
-        background-color: white;
+        background-color: var(--bg-secondary);
         padding: 1.5rem;
         margin-bottom: 2rem;
-        border-left: 5px solid #0066cc;
+        border-left: 5px solid var(--color-primary);
         border-radius: 5px;
     }
     .about-text p{
         margin-bottom: 1rem;
     }
     aside.interests{
-        background-color: #eaf3fc;
+        background-color: var(--bg-secondary);
         padding: 1rem;
         margin-top: 1rem;
-        border-left: 4px solid #004a99;
+        border-left: 4px solid var(--color-primary);
         border-radius: 4px;
     }
     aside.intrests ul{
@@ -88,8 +88,8 @@
     details{
         margin-top: 1rem;
         padding: 0.5rem;
-        background-color: #f0f8ff;
-        border: 1px solid #ccc;
+        background-color: var(--bg-primary);
+        border: 1px solid var(--bg-secondary);
         border-radius: 4px;
     }
     details summary{
@@ -97,11 +97,63 @@
         font-weight: bold;
     }
     h2,h3{
-        color: #004a99;
+        color: var(--color-primary);
         margin-bottom: 1rem;
     }
     img{
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+    :root{
+        --bg-primary: #f4f6f8;
+        --bg-secondary: white;
+        --text-primary: #333;
+        --color-primary: #0066cc;
+        --color-accent: #eaf3fc;
+        --shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    body.dark-theme{
+        --bg-primary: #1a1a1a;
+        --bg-secondary: #2d2d2d;
+        --text-primary: #e0e0e0;
+        --color-primary: #66b3ff;
+        --color-accent: #3a3a3a;
+    }
+    .theme-toggle{
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: rgba(255,255,255,0.2);
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: background 0.3;
+    }
+    .theme-toggle:hover{
+        background: rgba(255,255,255,0.3);
+    }
+    body.dark-theme header{
+        background-color: var(--bg-secondary);
+    }
+    @media(max-width: 768){
+        nav ul{
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem
+        }
+        .theme-toggle{
+            position: static;
+            margin-bottom: 1rem;
+        }
+    }
+    @media print{
+        .theme-toggle{
+            display: none;
+        }
+        body{
+            background: white;
+            color: black;
+        }
     }
