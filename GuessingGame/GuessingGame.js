@@ -1,7 +1,9 @@
 let randomNumber =  Math.floor(Math.random() * 100);
 console.log("NUMBER: " + randomNumber);
 const clickButton = document.getElementById("button");
+const winImage = document.getElementById("winImage");
 clickButton.addEventListener("click",() =>{
+    winImage.setAttribute()
     const number = document.getElementById("number").value;
     const resultDisplay = document.getElementById("result");
     let num = parseInt(number);
