@@ -1,0 +1,58 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    body{
+        font-family:'Franklin Gothic Medium';
+        background: #2b2a2a;
+        color: #333;
+        line-height: 1.6;
+        padding-bottom: 20rem;
+    }
+    header{
+        text-align: center;
+        background-color: #c58128;
+        color: white;
+        padding: 2rem;
+        border-radius: 10px;
+        margin-bottom: 2rem;;
+    }
+    header h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .tagline{
+        font-style: italic;
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+    }
+    main{
+        max-width: 900px;
+        margin: auto;
+    }
+    details summary{
+        cursor: pointer;
+        font-weight: bold;
+    }
+    h2{
+        color: #a8b1bb;
+        margin-bottom: 1rem;
+        
+    }
+    h3{
+        color: #a8b1bb;
+        margin-bottom: 1rem;
+        text-size-adjust: 5rem;
+    }
+    button{
+        width: 5rem;
+        height: 2rem;
+        border-radius: 5rem;
+        box-shadow: lightblue;
+        color: white;
+        background-color: blue;   
+    }
