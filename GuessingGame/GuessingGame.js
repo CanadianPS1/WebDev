@@ -1,17 +1,20 @@
 let randomNumber =  Math.floor(Math.random() * 100);
-print("NUMBER: " + randomNumber);
-const scoreDisplay = document.getElementById("number");
+console.log("NUMBER: " + randomNumber);
 const clickButton = document.getElementById("button");
-const resultDisplay = document.getElementById("result");
 clickButton.addEventListener("click",() =>{
-    if(number == randomNumber){
-        print("number was random number");
-        resultDisplay.textContent = getResult("number was random number");
-    }else if(number < randomNumber){
-        print("number was less than random number");
-        resultDisplay.textContent = getResult("number was less than random number");
+    const number = document.getElementById("number").value;
+    const resultDisplay = document.getElementById("result");
+    let num = parseInt(number);
+    console.log(number);
+    if(num === randomNumber){
+        console.log("number was random number");
+        resultDisplay.textContent = "CORRECT!!!";
+        randomNumber =  Math.floor(Math.random() * 100);
+    }else if(num < randomNumber){
+        console.log("number was less than random number");
+        resultDisplay.textContent = "number was less than random number";
     }else{
-        print("number was greater than random number");
-        resultDisplay.textContent = getResult("number was greater than random number");
+        console.log("number was greater than random number");
+        resultDisplay.textContent = "number was greater than random number";
     }
 });
