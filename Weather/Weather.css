@@ -15,7 +15,7 @@
     header{
         text-align: center;
         background-color: #e6db6b;
-        color: white;
+        color: rgb(51, 50, 50);
         padding: 5rem;
         border-radius: 100rem;
         margin-bottom: 2rem;
@@ -34,30 +34,41 @@
     main{
         max-width: 900px;
         margin: auto;
+        background-color: white;
+        padding: 5rem;
+        border-radius: 5rem;
     }
     details summary{
         cursor: pointer;
         font-weight: bold;
     }
     h2{
-        color: #f8fafc;
+        color: #454545;
         margin-bottom: 1rem;
-        
+        font-family: 'Courier New', Courier, monospace;
     }
     h3{
-        color: #a8b1bb;
+        color: #eaeaea;
         margin-bottom: 1rem;
         text-size-adjust: 5rem;
         border-radius: 25rem;
+        display: flex;
+        align-items: center;
+        margin-left: 30%;
+
     }
+    
     textarea{
-        border-radius: 25rem;
         height: 3rem;
-        width: 10rem;
+        width: 15rem;
         text-align: center;
         font-size: 1.5rem;
         padding-top: 0.5rem;
         box-shadow: #000;
+        border-top-left-radius: 25rem;
+        border-bottom-left-radius: 25rem;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        flex-wrap: nowrap;
     }
     h4{
         color: #a8b1bb;
@@ -66,9 +77,16 @@
     }
     button{
         width: 5rem;
-        height: 2rem;
-        border-radius: 5rem;
-        box-shadow: lightblue;
+        height: 3rem;
+        border-bottom-right-radius: 5rem;
+        border-top-right-radius: 5rem;
+        box-shadow: 000;
         color: white;
-        background-color: blue;   
+        background-color: rgb(153, 153, 181);
+        margin-left: 0rem;
+        
+    }
+    button:hover{
+        background-color: #acb6e5;
+        cursor:pointer;
     }
