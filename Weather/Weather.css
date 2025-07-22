@@ -92,7 +92,7 @@
         background-color: #acb6e5;
         cursor:pointer;
     }
-    .oneDay{
+    .oneDay,.fiveDay{
         width: 5rem;
         height: 2rem;
         border-radius: 5rem;
@@ -102,15 +102,9 @@
         margin-left: 0rem;
         font-family:Verdana, Geneva, Tahoma, sans-serif;
     }
-    .fiveDay{
-        width: 5rem;
-        height: 2rem;
-        border-radius: 5rem;
-        box-shadow: 000;
-        color: white;
-        background-color: rgb(200, 200, 255);
-        margin-left: 0rem;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    .oneDay:hover,.fiveDay:hover{
+        background-color: #a2b3fd;
+        cursor:pointer;
     }
     footer{
         color: azure;
