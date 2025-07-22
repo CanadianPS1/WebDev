@@ -35,6 +35,8 @@
         max-width: 900px;
         margin: auto;
         background-color: white;
+        box-shadow: #454545;
+        box-sizing: border-box;
         padding: 5rem;
         border-radius: 5rem;
     }
