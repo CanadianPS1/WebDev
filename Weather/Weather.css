@@ -45,19 +45,40 @@
         border-radius: 25rem;
         display: flex;
         align-items: center;
-        margin-left: 30%;
+        margin-left: 10%;
+        margin-right: 10%;
 
     }
     
-    textarea{
+    .city{
         height: 3rem;
         width: 15rem;
         text-align: center;
-        font-size: 1.5rem;
-        padding-top: 0.5rem;
+        font-size: 1rem;
+        padding-top: 0.7rem;
         box-shadow: #000;
         border-top-left-radius: 25rem;
         border-bottom-left-radius: 25rem;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        flex-wrap: nowrap;
+    }
+    .state{
+        height: 3rem;
+        width: 15rem;
+        text-align: center;
+        font-size: 1rem;
+        padding-top: 0.7rem;
+        box-shadow: #000;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        flex-wrap: nowrap;
+    }
+    .country{
+        height: 3rem;
+        width: 15rem;
+        text-align: center;
+        font-size: 1rem;
+        padding-top: 0.7rem;
+        box-shadow: #000;
         font-family:Verdana, Geneva, Tahoma, sans-serif;
         flex-wrap: nowrap;
     }
