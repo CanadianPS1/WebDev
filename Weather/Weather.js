@@ -19,9 +19,12 @@ searchButton.addEventListener("click",() =>{
     const countryName = document.getElementById("country").value;
     apiKey = "d3df5d3c92ea812769bd9ad5b87c118f";
     if(oneDayForcast){
-      url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName},${stateName},${countryName}&appid=${apiKey}&units=imperial`;
+        url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName},${stateName},${countryName}&appid=${apiKey}&units=imperial`;
+        document.getElementById("weatherWidget").src = "OneDay.html";
     }else{
-      url = `https://api.openweathermap.org/data/2.5/forecast?q=${cityName},${stateName},${countryName}&appid=${apiKey}&units=imperial`;
+        document.getElementById("weatherWidget").src = "FiveDay.html";
+        url = `https://api.openweathermap.org/data/2.5/forecast?q=${cityName},${stateName},${countryName}&appid=${apiKey}&units=imperial`;
+
     }
     fetch(url).then(response => response.json()).then(data => {
         console.clear();
