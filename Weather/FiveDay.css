@@ -1,0 +1,41 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    
+    h2{
+        color: black;
+    }
+    h3{
+        font-size: small;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    body{
+        font-family:'Franklin Gothic Medium';
+        background: #4b6af5;
+        line-height: 1.6;
+        
+        height: 10rem;
+    }
+    
+    main{
+        max-width: 900px;
+        margin: auto;
+        background-color: rgb(231, 222, 166);
+        box-shadow: #454545;
+        box-sizing: border-box;
+        margin: 2rem;
+        margin-top: 2.5rem;
+        border-radius: 3rem;
+        
+        height: 20rem;
+    }
+    details summary{
+        cursor: pointer;
+        font-weight: bold;
+    }
+    

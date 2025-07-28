@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <style>
-        h1,h2,h3,h4{text-align: center;}
+        h1,h3,h3,h4{text-align: center;}
     </style>
     <head>
         <meta charset="UTF-8">
@@ -14,15 +14,40 @@
         <meta property="og:type" content="website">
         <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmls='http://www.w3.org/2000/svg' viewbox= '0>">
         <link rel="icon" href="weatherImage.png" type="image/png">
-        <link rel="stylesheet" href="Weather.css">
+        <link rel="stylesheet" href="FiveDay.css">
         <title>Weather Widget</title>
     </head>
     <body>
         <main id="main-content" role="main">
-           Five Day
-            
+            <div style="display: flex;">
+                <div>
+                    <h1>Day 1</h1>
+                    <h3><img src="" id="day0Image"></h3>
+                    <h2 id="d0temp">temp</h2>
+                </div>
+                <div>
+                    <h1>Day 2</h1>
+                    <h3><img src="" id="day1Image"></h3>
+                    <h2 id="d1temp">temp</h2>
+                </div>
+                <div>
+                    <h1>Day 3</h1>
+                    <h3><img src="" id="day2Image"></h3>
+                    <h2 id="d2temp">temp</h2>
+                </div>
+                <div>
+                    <h1>Day 4</h1>
+                    <h3><img src="" id="day3Image"></h3>
+                    <h2 id="d3temp">temp</h2>
+                </div>
+                <div>
+                    <h1>Day 5</h1>
+                    <h3><img src="" id="day4Image"></h3>
+                    <h2 id="d4temp">temp</h2>
+                </div>
+                
+            </div>
         </main>
     </body>
-    <footer>Copyright ©2025 by Lia Roeback</footer>
     <script src="Weather.js"></script>
 </html>
