@@ -8,7 +8,7 @@
     }
     body{
         font-family:'Franklin Gothic Medium';
-        background: linear-gradient(to right, #74ebd5, #acb6e5);
+        background: linear-gradient(to right, #79b7eb, #acb6e5);
         line-height: 1.6;
         padding-bottom: 20rem;
     }
@@ -22,7 +22,7 @@
     main{
         max-width: 900px;
         margin: auto;
-        background-color: white;
+        background-color: rgb(200, 221, 245);
         box-shadow: #454545;
         box-sizing: border-box;
         padding: 5rem;
@@ -117,6 +117,12 @@
     .oneDay:hover,.fiveDay:hover{
         background-color: #a2b3fd;
         cursor:pointer;
+    }
+    .weatherWidget{
+        margin-left: 20%;
+        border-radius: 5rem;
+        width: 30rem;
+        height: 25rem;
     }
     footer{
         color: azure;
