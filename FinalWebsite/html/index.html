@@ -13,24 +13,37 @@
         <meta property="og:description" content="HomePageForPortfolio">
         <meta property="og:type" content="website">
         <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmls='http://www.w3.org/2000/svg' viewbox= '0>">
-        <link rel="stylesheet" href="\css\index.css">
+        <link rel="stylesheet" href="css\index.css">
         <title>Personal Portfolio</title>
     </head>
     <body>
         <header class="header">
             Personal Portfolio
             <h3>By: Lia Roeback</h3>
-        </header>
-        <main id="main-content" role="main">
-            <section>
+            <section class="navigation">
                 <nav role="navigation" aria-label="Main navigation">
                     <div class="container" style="display: flex;">
-                        <li><a href="mySkills.html" aria-describedby="about-desc">My Skills</a></li>
-                        <li><a href="myProjects.html" aria-describedby="skills-desc">My Projects</a></li>
-                        <li><a href="aboutAndContactMe.html" aria-describedby="projects-desc">About / Contact me</a></li>
+                        <a href="mySkills.html" aria-describedby="about-desc" class="l1">My Skills</a>
+                        <a href="myProjects.html" aria-describedby="skills-desc" class="l2">My Projects</a>
+                        <a href="aboutAndContactMe.html" aria-describedby="projects-desc" class="l3">About / Contact me</a>
                     </div>
                 </nav>
             </section>
+        </header>
+        <main id="main-content" role="main">
+            <div class="quote" >
+                <q id="quote" class="quoteText"></q>-Gex
+            </div>
+            <input class="newQuote" type="image" src="images\NextQuoteButton.png" alt="Submit" onclick="getRandomQuote()">
+            <div class="images" style="display: flex;">
+                <input class="backButton" type="image" src="images\BackButton.png" alt="Submit" onclick="BackImage()">
+                <img src="Images\ImageOne.png" id="image">
+                <input class="nextButton" type="image" src="images\NextButton.png" alt="Submit" onclick="NextImage()">
+            </div>
+            
         </main>
     </body>
+    <footer>Copyright ©2025 by Lia Roeback</footer>
+    <script src="js\nextImage.js"></script>
+    <script src="js\randomQuote.js"></script>
 </html>
