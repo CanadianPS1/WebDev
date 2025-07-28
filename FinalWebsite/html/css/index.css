@@ -48,6 +48,7 @@ h3{
 }
 img{
     height: 30rem;
+    border-radius: 0.5rem;
 }
 .quote{
     text-align: center;

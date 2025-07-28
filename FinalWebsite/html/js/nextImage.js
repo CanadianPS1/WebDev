@@ -2,7 +2,7 @@
 let imagePosition = 0;
 let imagePaths = ["Images\\ImageOne.png", "Images\\ImageTwo.png"];
 const displayedImage = document.getElementById("image");
-
+setInterval(function () {NextImage()}, 10000);
 function NextImage(){
     imagePosition++;
     if(imagePosition >= imagePaths.length){
