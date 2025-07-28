@@ -119,14 +119,24 @@
         cursor:pointer;
     }
     .weatherWidget{
-        margin-left: 20%;
+        margin-left: var(--marg);
         border-radius: 5rem;
-        width: 30rem;
-        height: 25rem;
+        width: var(--width);
+        height: var(--height);
     }
     footer{
         color: azure;
         font-size: small;
         size: small;
         padding-left: 2rem;
+    }
+    .weatherWidget{
+        --height: 25rem;
+        --width: 30rem;
+        --marg: 20%;
+    }
+    .weatherWidget.fiveDay{
+        --height: 25rem;
+        --width: 38.5rem;
+        --marg: 10%;
     }

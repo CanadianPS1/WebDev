@@ -8,18 +8,40 @@ document.getElementById("country").textContent = localStorage.getItem("country")
 const savedState = localStorage.getItem("state");
 const savedCountry = localStorage.getItem("country");
 let oneDayForcast = true;
-oneDayForcast = localStorage.getItem("forcast");
-oneDay.addEventListener("click", ()=>{
+const iframe = document.getElementById("weatherWidget");
+
+// On page load, try to restore state from localStorage
+const savedForecast = localStorage.getItem("forcast");
+if (savedForecast !== null) {
+    oneDayForcast = savedForecast === "true";
+    toggleIframeClass();
+}
+
+// Helper function to toggle the iframe class based on current forecast mode
+function toggleIframeClass() {
+    iframe.classList.add("weatherWidget"); // always add base class
+    if (oneDayForcast) {
+        iframe.classList.remove("fiveDay");
+    } else {
+        iframe.classList.add("fiveDay");
+    }
+}
+
+// Button event listeners:
+oneDay.addEventListener("click", () => {
     oneDayForcast = true;
 });
-fiveDay.addEventListener("click", ()=>{
+
+fiveDay.addEventListener("click", () => {
     oneDayForcast = false;
 });
+
 searchButton.addEventListener("click",() =>{
     const cityName = document.getElementById("city").value;
     const stateName = document.getElementById("state").value;
     const countryName = document.getElementById("country").value;
     const iframe = document.getElementById("weatherWidget");
+    toggleIframeClass();
     fetch("apiKey.json").then(response => response.json()).then(data => {
         const apiKey = data.weatherKey;
         console.log("weatherKey:", apiKey);
