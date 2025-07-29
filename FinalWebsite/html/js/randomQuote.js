@@ -1,4 +1,5 @@
 getRandomQuote();
+//ya
 function getRandomQuote(){
     fetch("csvs\\quotes.csv").then(response => response.text()).then(text => {
         const rows = text.trim().split('\n');
