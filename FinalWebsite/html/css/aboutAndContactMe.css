@@ -8,7 +8,8 @@ body{
 header{
     text-align: center;
     font-size: 5rem;
-    font-family: "Lucida Console", "Courier New", monospace;    background-color: darkcyan;
+    font-family: "Lucida Console", "Courier New", monospace;    
+    background-color: darkcyan;
     padding-top: 6rem;
     padding-left: 6rem;
     padding-right: 6rem;
@@ -18,6 +19,18 @@ header{
 .navigation{
     margin: 4rem;
     margin-left: 35%;
+}
+main{
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Lucida Console", "Courier New", monospace;
+    padding: 3rem;
+    margin-bottom: 3rem;
+}
+h3{
+    font-size: 1rem;
+    padding: 3rem;
+    margin: 1rem;
 }
 .l1,.l2,.l3{
     color: rgb(48, 46, 46);
